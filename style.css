@@ -2,7 +2,32 @@ body {
 	background-color: lightgray;
 }
 
-h1 {
+.header{
 	background-color: white;
 	text-align: center;
+	margin-top: 4%;
+}
+
+.links {
+	float: left;
+	padding-right: 3%;
+	width: 20%;
+}
+
+.nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: lightblue;
+}
+
+.nav div {
+	padding: 1%;
+}
+
+.info {
+	width: 60%;
+	float: inline-start;
 }
