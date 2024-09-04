@@ -31,3 +31,25 @@ body {
 	width: 60%;
 	float: inline-start;
 }
+
+@media all and (max-width: 750px){
+
+	body {
+		display: grid;
+		grid-template-areas: 
+			"a"
+			"b"
+			"c"
+			"d";
+		
+	}
+
+	.links {
+		grid-area: d;
+		width: auto;
+	}
+
+	.info {
+		width: auto;
+	}
+}
