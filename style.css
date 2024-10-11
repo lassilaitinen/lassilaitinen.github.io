@@ -1,17 +1,38 @@
 body {
-	background-color: lightgray;
+	background-color: #343434;
 }
 
 .header{
 	background-color: white;
 	text-align: center;
-	margin-top: 4%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+.side {
+	float: left;
+	padding-right: 3%;
+	width: 25%;
+	margin-top: 8%;
 }
 
 .links {
-	float: left;
-	padding-right: 3%;
-	width: 20%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 1%;
+	margin-top: 2%;
+}
+
+.side img {
+	max-width: 100%;
+	border-radius: 10px;
 }
 
 .nav {
@@ -21,15 +42,24 @@ body {
 	top: 0;
 	left: 0;
 	background-color: lightblue;
+	align-items: center;
+	max-height: fit-content;
+	border-bottom: 5px solid darkblue;
 }
 
 .nav div {
 	padding: 1%;
 }
 
-.info {
-	width: 60%;
+.content {
+	width: 50%;
 	float: inline-start;
+	background-color: white;
+	border-radius: 25px;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 2%;
+	margin-top: 8%;
 }
 
 @media all and (max-width: 850px){
@@ -44,12 +74,36 @@ body {
 		
 	}
 
-	.links {
+	.side {
 		grid-area: d;
 		width: auto;
+		border-radius: 25px;
+		margin-top: 2%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 
-	.info {
+	.side img {
+		max-width: 50%;
+	}
+
+	.links {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.links > p,h3 {
+		padding-left: 2%;
+	}
+
+	.content {
 		width: auto;
+		margin-bottom: 0;
+		margin-top: 10%;
+	}
+
+	.nav {
+		height: fit-content;
 	}
 }
