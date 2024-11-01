@@ -3,6 +3,7 @@
     <head>
         <title>Lassi Laitinen</title>
         <script src="script.js"></script>
+        <script src="languages.js"></script>
     </head>
     <link href='style.css' type="text/css" rel="stylesheet" >
     <body>
@@ -10,13 +11,17 @@
             <div class="header">
                 <h1>Lassi Laitinen</h1>
             </div>
-            <div><a href="https://lassilaitinen.github.io/"> Etusivu </a></div>
-            <div><a href="https://lassilaitinen.github.io/projects/projects.html"> Projekteja </a></div>
+            <div><a id="navetusivu" href="https://lassilaitinen.github.io/"> Etusivu </a></div>
+            <div><a id="navprojects" href="https://lassilaitinen.github.io/projects/projects.html"> Projekteja </a></div>
+            <div><button onclick="changeLanguage('fi')">
+                Suomeksi</button></div>
+            <div><button onclick="changeLanguage('eng')">
+                In English</button></div>
         </nav>
         <div class="side">
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQG523eCHzZOZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675182561681?e=1733961600&v=beta&t=r_7JkLnihG4MrSlq08kGH2V4mvUPetavgz-lyLYxudc">
             <div class="links">
-                <h3>Linkkejä:</h3>
+                <h3 id="links">Linkkejä:</h3>
                 <p>
                     LinkedIn: <a href="https://www.linkedin.com/in/lassi-laitinen-/"> linkedin.com/in/lassi-laitinen-/</a>    
                 </p>
@@ -26,8 +31,8 @@
             </div>
         </div>
         <div class="content">
-            <h2>Minä</h2>
-            <p>
+            <h2 id="meheader">Minä</h2>
+            <p id="metext">
                 Olen neljännen opiskeluvuoden Jyväskylän yliopistossa aloittanut tieto- ja ohjelmistotekniikan opiskelija. Opiskelut aloitin syksyllä 2021 ja valmistuin 
                 tekniikan kandidaatiksi alkukesästä 2024. Sivuaineena opiskelin kandivaiheessa liiketoimintaa. Syksyllä 2024 aloitin opiskelun tieto- ja ohjelmistotekniikan
                 DI-ohjelmassa. <br>
@@ -36,27 +41,15 @@
                 eri aloilla ja erilaisiin tarkoituksiin kuuluu kiinnostukseni kohteisiin. Tieto- ja ohjelmistotekniikkaa minut sai opiskelemaan tietotekniikan merkittävyys 
                 digitalisoituvassa yhteiskunnassa sekä se, että ala tarjoaa aina uusia haasteita ja mahdollisuuksia.
             </p>
-            <h2>Osaaminen</h2>
-            <p>
+            <h2 id="skills">Osaaminen</h2>
+            <p id="skills_text">
                 Opinnoissa olen kerryttänyt osaamista muun muassa ohjelmoinnista, tietotekniikasta sekä teoriaosaamista että osaamista sen eri osa-alueista, kuten 
-                matematiikasta ja tietokannoista.
-
-                <br>Alla listattuna muutamia osaamisalueeseeni kuuluvia asioita.
-            </p>
-            <ul>
-                <li>C#, Java, JavaScript, Python</li>
-                <li>Tietokannat, kuten SQL</li>
-                <li>Git</li>
-                <li>Yleisimmät ohjelmistot, kuten MS Office ja Drive</li>
-                <li>Nettisivujen luominen hyödyntäen HTML, CSS, Flask, Django</li>
-            </ul>
-            <p>
-                <a href="https://lassilaitinen.github.io/projects/projects.html"> Projekteja </a>-sivulle olen listannut muutamia keskeisiä projekteja, joita olen tehnyt ja
-                joissa olen päässyt oppimaan uutta sekä myös kehittämään osaamistani. 
+                matematiikasta ja tietokannoista. Eri teknologioista olen käyttänyt mm. eri koodikieliä (C#, Java, Python, JavaScript), tietokantoja (SQL), Git sekä 
+                nettisivujen luomisessa eri työkaluja, kuten HTML, CSS, Flask ja Django.
             </p>
 
-            <h2>Muu kokemus ja osaaminen</h2>
-            <p>
+            <h2 id="other_experience">Muu kokemus ja osaaminen</h2>
+            <p id="other_text">
                 Opintojen ohessa olen toiminut Jyväskylän teekkareiden killan Algo ry:n hallituksessa sosiaali- ja koulutuspoliittisena vastaavana sekä hyvinvointivastaavana
                 vuosina 2022-2023. Toimin myös tutorina uusille opiskelijoille sekä fuksivastaavana syksyllä 2022.<br>
                 

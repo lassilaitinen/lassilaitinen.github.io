@@ -12,19 +12,20 @@ body {
 	padding: 0;
 }
 
-h1 {
+.header h1 {
+	margin-left: 0.25%;
 	margin: 0;
 }
 
 .side {
 	float: left;
 	padding-right: 3%;
-	width: 25%;
+	width: 15%;
 	margin-top: 8%;
 }
 
 .links {
-	background-color: white;
+	background-color: lightgray;
 	border-radius: 10px;
 	padding: 1%;
 	margin-top: 2%;
@@ -52,7 +53,7 @@ h1 {
 }
 
 .content {
-	width: 50%;
+	width: 60%;
 	float: inline-start;
 	background-color: white;
 	border-radius: 25px;
@@ -61,6 +62,25 @@ h1 {
 	margin-bottom: 2%;
 	margin-top: 8%;
 }
+
+.projects {
+	width: 60%;
+	float: inline-start;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 2%;
+	margin-top: 8%;
+}
+
+.projects div, h1 {
+	background-color: white;
+	border-radius: 15px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding: 0.20px;
+	margin-top: 1.5%;
+}
+
 
 @media all and (max-width: 850px){
 

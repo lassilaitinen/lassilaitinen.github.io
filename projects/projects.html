@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Lassi Laitinen</title>
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
+        <script src="languages_projects.js"></script>
     </head>
     <link href='../style.css' type="text/css" rel="stylesheet" >
     <body>
@@ -10,14 +11,17 @@
             <div class="header">
                 <h1>Lassi Laitinen</h1>
             </div>
-            <div><a href="https://lassilaitinen.github.io/"> Etusivu </a></div>
-            <div><a href="https://lassilaitinen.github.io/projects/projects.html"> Projekteja </a></div>
+            <div><a id="navetusivu" href="https://lassilaitinen.github.io/"> Etusivu </a></div>
+            <div><a id="navprojects" href="https://lassilaitinen.github.io/projects/projects.html"> Projekteja </a></div>
+            <div><button onclick="changeLanguage('fi')">
+                Suomeksi</button></div>
+            <div><button onclick="changeLanguage('eng')">
+                In English</button></div>
         </nav>
-
         <div class="side">
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQG523eCHzZOZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675182561681?e=1733961600&v=beta&t=r_7JkLnihG4MrSlq08kGH2V4mvUPetavgz-lyLYxudc">
             <div class="links">
-                <h3>Linkkejä:</h3>
+                <h3 id="links">Linkkejä:</h3>
                 <p>
                     LinkedIn: <a href="https://www.linkedin.com/in/lassi-laitinen-/"> linkedin.com/in/lassi-laitinen-/</a>    
                 </p>
@@ -26,44 +30,48 @@
                 </p>
             </div>
         </div>
-        <div class="content">
-            <h1>Tehtyjä projekteja</h1>
-            <h3>SecureApp</h3>
-            <p>
+        <div class="projects">
+            <h1 id="projects_header">Tehtyjä projekteja</h1>
+            <div>
+            <h3 id="secureapp_header">SecureApp</h3>
+            <p id="secureapp">
                 MOOC Cyber Security Base -kurssin projekti. Tavoitteena oli luoda sovellus pienin tietoturvahaavoittuvuksin sekä kirjoittaa
                 ohjeet, kuinka haavoittuvuudet voidaan korjata. Sovelluksessa voi kirjauduttuaan sisään lisätä havaittuja tietoturvariskejä sekä 
                 kommentoida muiden käyttäjien lisäämiä huomioita ja havaintoja.
-                <br> Linkki: <a href="https://github.com/lassilaitinen/CSB-project1">Projekti GitHubissa </a>
+            </p><p>
+                <br><a id="link" href="https://github.com/lassilaitinen/CSB-project1">GitHub</a>
             </p>
-
-            <h3>Kandidaatintutkielma</h3>
-            <p>
+            </div><div>
+            <h3 id="kandi_header">Kandidaatintutkielma</h3>
+            <p id="kandi">
                 Tein kandidaatintutkielmani digitaalisten järjestelmien turvallisuusuhista sekä käyttäjien tietoisuudesta ja suhtautumisesta näihin uhkiin.
-                <br> Linkki: <a href="https://jyx.jyu.fi/handle/123456789/94935">Käyttäjien tietoisuus kyberturvallisuusuhista ja digitaalisten järjestelmien turvallisuus </a>
+            </p><p>
+                <br> <a id="link" href="https://jyx.jyu.fi/handle/123456789/94935">Käyttäjien tietoisuus kyberturvallisuusuhista ja digitaalisten järjestelmien turvallisuus </a>
             </p>
-
-            <h3>Omat kotisivut</h3>
-            <p>
-                Nämä sivut, joilla olet juuri nyt!
-                <br>Linkit: <a href="https://github.com/lassilaitinen/lassilaitinen.github.io">GitHub</a>, <a href="https://lassilaitinen.github.io/">etusivu </a>
-            </p>
-
-            <h3>Havaintopäiväkirja</h3>
-            <p>
+            </div><div>
+            <h3 id="observation_header">Havaintopäiväkirja</h3>
+            <p id="observation">
                 Ohjelmointi 2 -kurssin harjoitustyö, jossa sain ensimmäisen kosketuksen Javaan. 
-                <br> Linkki: <a href="https://github.com/lassilaitinen/Havaintopaivakirja">Projekti GitHubissa </a>
+            </p><p>
+                <br><a id="link" href="https://github.com/lassilaitinen/Havaintopaivakirja">GitHub </a>
             </p>
-
-            <h3>Webjulkaisemisen harjoitustyö</h3>
-            <p>
+            </div><div>
+            <h3 id="web_header">Web-julkaisemisen harjoitustyö</h3>
+            <p id="web">
                 ITKP1011 -kurssin harjoitustyö. Harjoitustyönä tuli tehdä annetun mallin mukaiset nettisivut. Ensikosketus internetsivujen luontiin.
-                <br> Linkki: <a href="http://users.jyu.fi/~loklaiti/arcu/"> http://users.jyu.fi/~loklaiti/arcu/</a>
+            </p><p>
+                <br><a id="link" href="http://users.jyu.fi/~loklaiti/arcu/"> http://users.jyu.fi/~loklaiti/arcu/</a>
             </p>
-
-            <h3>Seikkailija -peli</h3>
-            <p>
+            </div><div>
+            <h3 id="adventurer_header">Seikkailija -peli</h3>
+            <p id="adventurer">
                 Ohjelmointi 1 -kurssin harjoitustyö, joka oli samalla ensimmäinen ohjelmointiprojektini. 
-                <br> Linkki: <a href="https://github.com/lassilaitinen/Seikkailija-peli">Projekti GitHubissa </a>
+            </p><p>
+                <br><a id="link" href="https://github.com/lassilaitinen/Seikkailija-peli">GitHub</a>
+            </p>
+            </div>
+            <p id="modified">
+                Viimeksi päivitetty tulee tähän. 
             </p>
         </div>
     </body>
