@@ -1,5 +1,3 @@
 # lassilaitinen.github.io
 
-A simple website about me. 
-
-Only in Finnish (at the moment ;) )
+A simple website about me to work as a portfolio. 
