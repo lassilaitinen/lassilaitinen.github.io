@@ -4,6 +4,8 @@
         <title>Lassi Laitinen</title>
         <script src="script.js"></script>
         <script src="languages.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>   
     </head>
     <link href='style.css' type="text/css" rel="stylesheet" >
     <body>
@@ -13,10 +15,17 @@
             </div>
             <div><a id="navetusivu" href="https://lassilaitinen.github.io/"> Etusivu </a></div>
             <div><a id="navprojects" href="https://lassilaitinen.github.io/projects/projects.html"> Projekteja </a></div>
+            <div><a href="cv_Laitinen.pdf"> CV </a></div>
             <div><button onclick="changeLanguage('fi')">
                 Suomeksi</button></div>
             <div><button onclick="changeLanguage('eng')">
                 In English</button></div>
+            <div id="root"></div>
+            <script src="App.js"></script>
+            <script>
+                const root = ReactDOM.createRoot(document.getElementById('root'));
+                root.render(<App />);
+            </script>
         </nav>
         <div class="side">
             <img src="photos/me.jpg">

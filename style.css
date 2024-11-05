@@ -95,10 +95,10 @@ body {
 	}
 
 	.side {
-		grid-area: d;
+		grid-area: a;
 		width: auto;
 		border-radius: 25px;
-		margin-top: 2%;
+		margin-top: 10%;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -117,10 +117,10 @@ body {
 		padding-left: 2%;
 	}
 
-	.content {
+	.content, .projects {
 		width: auto;
 		margin-bottom: 0;
-		margin-top: 10%;
+		margin-top: 2%;
 	}
 
 	.nav {
